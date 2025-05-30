@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const PaymentSchema = new mongoose.Schema({
   firstName: { type: String, required: true, maxlength: 255 },
-  lastName: { type: String, required: true, maxlength: 255 },
   number: { type: Number, required: true, min: 10 },
   email: { type: String, required: true, maxlength: 255 },
   country: { type: String, required: true, maxlength: 255 },
